@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   def caps
     @my_name = params[:name].upcase
   end
+
   def a_name
     @my_name = params[:name]
 
@@ -25,4 +26,15 @@ class PagesController < ApplicationController
       @message = "You are correct!!!"
     end
   end
+
+  def url
+    @message = params[:penguins]
+  end
 end
+
+
+
+
+
+
+
